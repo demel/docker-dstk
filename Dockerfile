@@ -69,7 +69,7 @@ RUN bash -l -c "gem install bundler --no-ri --no-rdoc"
 
 RUN echo "source /home/$USER/.rvm/scripts/rvm" >> /home/$USER/.bashrc
 
-RUN git clone https://github.com/korczis/dstk # SHA: eae7d8daeeb9e31ded19eabfa2b7201605f993ca
+RUN git clone https://github.com/demel/dstk # SHA: 4e1ff8f42a9f223cc9a48fd97e9413c760a17049
 
 RUN git clone https://github.com/foursquare/twofishes.git
 RUN bash -l -c "cd twofishes && ./download-world.sh && ./parse.py -w ./serve.py latest"
